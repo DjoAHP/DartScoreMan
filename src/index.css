@@ -16,7 +16,7 @@ body {
     }
 
     h2 {
-font-size: 2rem;
+font-size: 1rem;
     }
 
     .players-grid {
@@ -30,7 +30,7 @@ font-size: 2rem;
 
     .player {
       padding: 20px;
-      width: 300px;
+      width: 200px;
       border: 1px solid rgba(255, 255, 255, 0.1);
       background: rgba(255, 255, 255, 0.05);
       color: #e0e0e0;
