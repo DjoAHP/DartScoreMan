@@ -19,6 +19,13 @@ body {
 font-size: 1rem;
     }
 
+    .svg-icon {
+      width: 40px; /* Ajustez la largeur selon vos besoins */
+      height: auto; /* Maintient le ratio d'aspect */
+      margin-top: 5px;
+      cursor: pointer; /* Change le curseur au survol */
+  }
+
     .players-grid {
       display: grid;
       grid-template-columns: repeat(3, 1fr);

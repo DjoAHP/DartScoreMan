@@ -138,33 +138,37 @@ const App = () => {
                 <div key={player.id} className="player">
                   <h4 style={{ textAlign: "right" }}>
                     {remainingScore}/{scoreToWin}
-                  </h4>{" "}
-                  {/* Affiche le score restant */}
+                  </h4>
                   <h2>
                     {player.name} <br /> Score: {player.score} / {gameType}
                   </h2>
-                  <button onClick={() => undoScore(player.id)}>
-                    Score précédent
-                  </button>
+                  <button onClick={() => undoScore(player.id)}>Back</button>
+                  <div style={{ display: 'flex', alignItems: 'center' }}>
+                    <img
+                        src="/SVG_icones/25.svg" // Remplacez par le chemin de votre icône
+                        alt="Simple Bull"
+                        onClick={() => updateScore(player.id, 25)} // Ajoute 25 points
+                        className="svg-icon"
+                        style={{ cursor: 'pointer', marginRight: '10px' }}
+                    />
+                    <img
+                        src="/SVG_icones/50.svg" // Remplacez par le chemin de votre icône
+                        alt="Bullseye"
+                        onClick={() => updateScore(player.id, 50)} // Ajoute 50 points
+                        className="svg-icon"
+                        style={{ cursor: 'pointer' }}
+                    />
+                  </div>
                   <div className="score-buttons">
                     {scores.map((score) => (
                       <div key={score} style={{ marginBottom: "5px" }}>
-                        <button
-                          className="simple"
-                          onClick={() => updateScore(player.id, score)}
-                        >
+                        <button className="simple" onClick={() => updateScore(player.id, score)}>
                           {score}
                         </button>
-                        <button
-                          className="double"
-                          onClick={() => updateScore(player.id, score * 2)}
-                        >
+                        <button className="double" onClick={() => updateScore(player.id, score * 2)}>
                           {score * 2}
                         </button>
-                        <button
-                          className="triple"
-                          onClick={() => updateScore(player.id, score * 3)}
-                        >
+                        <button className="triple" onClick={() => updateScore(player.id, score * 3)}>
                           {score * 3}
                         </button>
                       </div>
