@@ -145,14 +145,14 @@ const App = () => {
                   <button onClick={() => undoScore(player.id)}>Back</button>
                   <div style={{ display: 'flex', alignItems: 'center' }}>
                     <img
-                        src="./SVG_icones/25.svg" // Remplacez par le chemin de votre icône
+                        src="SVG_icones/25.svg" // Remplacez par le chemin de votre icône
                         alt="Simple Bull"
                         onClick={() => updateScore(player.id, 25)} // Ajoute 25 points
                         className="svg-icon"
                         style={{ cursor: 'pointer', marginRight: '10px' }}
                     />
                     <img
-                        src="./SVG_icones/50.svg" // Remplacez par le chemin de votre icône
+                        src="SVG_icones/50.svg" // Remplacez par le chemin de votre icône
                         alt="Bullseye"
                         onClick={() => updateScore(player.id, 50)} // Ajoute 50 points
                         className="svg-icon"
