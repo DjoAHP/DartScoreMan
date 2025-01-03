@@ -21,10 +21,10 @@ font-size: 1rem;
 
     .players-grid {
       display: grid;
-      grid-template-columns: repeat(6, 1fr);
+      grid-template-columns: repeat(4, 1fr);
       gap: 20px;
       width: 100%;
-      max-width: 1400px;
+      max-width: 1300px;
       margin-top: 20px;
     }
 
