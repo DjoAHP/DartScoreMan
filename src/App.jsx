@@ -106,6 +106,12 @@ const App = () => {
               setNumPlayers(Number(e.target.value));
               setPlayerNames(Array(Number(e.target.value)).fill(""));
             }}
+
+            onKeyPress={(e) => {
+              if (e.key === "Enter") {
+                  startGame(); // Appelle la fonction startGame si "Entrée" est pressée
+              }
+          }}
             placeholder="Number of players"
           />
           {Array.from({ length: numPlayers }).map((_, index) => (
