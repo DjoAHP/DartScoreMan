@@ -64,14 +64,17 @@ font-size: 1rem;
     }
 
     .score-buttons .simple {
+      width: 50px;
       background-color: #007acc;
     }
 
     .score-buttons .double {
+      width: 50px;
       background-color: #28a745;
     }
 
     .score-buttons .triple {
+      width: 50px;
       background-color: #dc3545;
     }
 
